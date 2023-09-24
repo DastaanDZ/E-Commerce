@@ -27,6 +27,7 @@ export const StoreModal = () => {
 
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
         // TODO: Create Store 
+        console.log(values);
     }
     return(
 
@@ -52,7 +53,7 @@ export const StoreModal = () => {
                             </FormItem>
                         )}
                         />
-                        <div className="pt-6 space-x-2 flex items-center justify-center w-full">
+                        <div className="pt-6 space-x-2 flex items-center justify-end w-full">
                             <Button 
                             variant="outline"
                             onClick={storeModal.onClose}
